@@ -131,14 +131,31 @@
                 android:text="answer 2"/>
         </RadioGroup>
 
-        <Button
-            android:id="@+id/btn_finish"
+        <LinearLayout
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Finish"
-            android:textStyle="bold"
-            android:textSize="30dp"/>
+            android:orientation="horizontal"
+>
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_finish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finish"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_practice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Practice"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 </ScrollView>
