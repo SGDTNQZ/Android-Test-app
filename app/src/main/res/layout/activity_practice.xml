@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PracticeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll_q1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/tv_practice_q1"
+                style="@style/tv_question"
+                android:text="Question 1"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rb_practice_q1_variant1"
+                    style="@style/rb_variant"
+                    android:text="variant1"/>
+                <RadioButton
+                    android:id="@+id/rb_practice_q1_variant2"
+                    style="@style/rb_variant"
+                    android:text="variant2"/>
+                <RadioButton
+                    android:id="@+id/rb_practice_q1_variant3"
+                    style="@style/rb_variant"
+                    android:text="variant3"/>
+                <RadioButton
+                    android:id="@+id/rb_practice_q1_variant4"
+                    style="@style/rb_variant"
+                    android:text="variant4"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_q2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/tv_practice_q2"
+                style="@style/tv_question"
+                android:text="Question 2"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rb_practice_q2_variant1"
+                    style="@style/rb_variant"
+                    android:text="variant1"/>
+                <RadioButton
+                    android:id="@+id/rb_practice_q2_variant2"
+                    style="@style/rb_variant"
+                    android:text="variant2"/>
+                <RadioButton
+                    android:id="@+id/rb_practice_q2_variant3"
+                    style="@style/rb_variant"
+                    android:text="variant3"/>
+                <RadioButton
+                    android:id="@+id/rb_practice_q2_variant4"
+                    style="@style/rb_variant"
+                    android:text="variant4"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_q3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/tv_practice_q3"
+                style="@style/tv_question"
+                android:text="Question 3"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rb_practice_q3_variant1"
+                    style="@style/rb_variant"
+                    android:text="variant1"/>
+                <RadioButton
+                    android:id="@+id/rb_practice_q3_variant2"
+                    style="@style/rb_variant"
+                    android:text="variant2"/>
+                <RadioButton
+                    android:id="@+id/rb_practice_q3_variant3"
+                    style="@style/rb_variant"
+                    android:text="variant3"/>
+                <RadioButton
+                    android:id="@+id/rb_practice_q3_variant4"
+                    style="@style/rb_variant"
+                    android:text="variant4"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_q4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:id="@+id/tv_practice_q4"
+                style="@style/tv_question"
+                android:text="Question 4"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rb_practice_q4_variant1"
+                    style="@style/rb_variant"
+                    android:text="variant1"/>
+                <RadioButton
+                    android:id="@+id/rb_practice_q4_variant2"
+                    style="@style/rb_variant"
+                    android:text="variant2"/>
+                <RadioButton
+                    android:id="@+id/rb_practice_q4_variant3"
+                    style="@style/rb_variant"
+                    android:text="variant3"/>
+                <RadioButton
+                    android:id="@+id/rb_practice_q4_variant4"
+                    style="@style/rb_variant"
+                    android:text="variant4"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Result:"
+                    android:textSize="30dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_result"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text=""/>
+                <Button
+                    android:id="@+id/btn_practice_check"
+                    style="@style/btn_check_style"
+                    android:text="Check"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

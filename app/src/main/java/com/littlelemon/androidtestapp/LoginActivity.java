@@ -50,8 +50,8 @@ public class LoginActivity extends AppCompatActivity {
                 if(login_edtxt.getText().toString().equals("qwerty")
                         && password_edtxt.getText().toString().equals("123"))
                 {
-                    Intent registrationIntent = new Intent(LoginActivity.this, MainActivity.class);
-                    startActivity(registrationIntent);
+                    Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(mainIntent);
                 }
                 else{
                     Toast.makeText(LoginActivity.this,"Something is wrong!", Toast.LENGTH_LONG).show();

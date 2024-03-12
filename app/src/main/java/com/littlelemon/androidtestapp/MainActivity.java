@@ -1,5 +1,6 @@
 package com.littlelemon.androidtestapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             rb_q3_answer1, rb_q3_answer2,
             rb_q4_answer1, rb_q4_answer2;
 
-    Button btn_finish;
+    Button btn_finish, btn_practice;
 
     String [] questions = {"1 + 1 = ?",
             "2 + 2 = ?",
@@ -76,17 +77,33 @@ public class MainActivity extends AppCompatActivity {
         rb_q4_answer2.setText(variants[3][1]);
 
        finish();
+
+       btn_practice = findViewById(R.id.btn_practice);
+       openPractice();
+
+    }
+
+    public void openPractice(){
+        View.OnClickListener practice = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent practiceIntent = new Intent(MainActivity.this, PracticeActivity.class);
+                startActivity(practiceIntent);
+            }
+        };
+
+        btn_practice.setOnClickListener(practice);
     }
 
     public void check(TextView tv_q, RadioButton rb1, RadioButton rb2, int n){
         if(rb1.isChecked() && rb1.getText().equals(answers[n])){
-            tv_q.setText(questions[0] + " Correct");
+            tv_q.setText(questions[n] + " Correct");
             tv_q.setTextColor(getResources().getColor(R.color.green));
         } else if (rb2.isChecked() && rb2.getText().equals(answers[n])) {
-            tv_q.setText(questions[0] + " Correct");
+            tv_q.setText(questions[n] + " Correct");
             tv_q.setTextColor(getResources().getColor(R.color.green));
         } else {
-            tv_q.setText(questions[0] + " Wrong");
+            tv_q.setText(questions[n] + " Wrong");
             tv_q.setTextColor(getResources().getColor(R.color.red));
         }
     }

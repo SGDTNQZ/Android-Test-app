@@ -6,4 +6,30 @@
     </style>
 
     <style name="Theme.AndroidTestApp" parent="Base.Theme.AndroidTestApp" />
+
+    <style name="tv_question">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="rb_variant">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="btn_check_style">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+<!--        <item name="android:textStyle">bold</item>-->
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/btn_decoration</item>
+    </style>
 </resources>
