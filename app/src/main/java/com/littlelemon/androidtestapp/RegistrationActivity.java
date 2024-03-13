@@ -47,7 +47,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     return;
                 }
 
-                Intent goMain = new Intent(RegistrationActivity.this, MainActivity.class);
+                Intent goMain = new Intent(RegistrationActivity.this, MyCabinet.class);
                 startActivity(goMain);
             }
         };

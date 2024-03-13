@@ -50,7 +50,11 @@ public class LoginActivity extends AppCompatActivity {
                 if(login_edtxt.getText().toString().equals("qwerty")
                         && password_edtxt.getText().toString().equals("123"))
                 {
-                    Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent mainIntent = new Intent(LoginActivity.this, MyCabinet.class);
+
+                    mainIntent.putExtra("email",login_edtxt.getText().toString());
+                    mainIntent.putExtra("password",password_edtxt.getText().toString());
+
                     startActivity(mainIntent);
                 }
                 else{
