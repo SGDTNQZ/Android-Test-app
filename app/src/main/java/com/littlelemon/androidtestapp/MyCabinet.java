@@ -20,7 +20,8 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class MyCabinet extends AppCompatActivity {
 
     CircleImageView img_user;
-    TextView tv_userEmail, tv_userPassword ;
+    TextView tv_userEmail, tv_userPassword ,
+            tv_userName;
     Button btn_startTest;
 
     @Override
@@ -31,6 +32,7 @@ public class MyCabinet extends AppCompatActivity {
 
         Intent intent = getIntent();
         String userEmail = intent.getStringExtra("email");
+        String userName = intent.getStringExtra("name");
         String userPassword = intent.getStringExtra("password");
 
         img_user = findViewById(R.id.img_user);
@@ -38,8 +40,11 @@ public class MyCabinet extends AppCompatActivity {
         tv_userEmail = findViewById(R.id.tv_userEmail);
         tv_userEmail.setText("User email: " + userEmail);
 
-        tv_userPassword = findViewById(R.id.tv_userPassword);
-        tv_userPassword.setText("User password:" + userPassword);
+//        tv_userPassword = findViewById(R.id.tv_userPassword);
+//        tv_userPassword.setText("User password:" + userPassword);
+
+        tv_userName = findViewById(R.id.tv_userName);
+        tv_userName.setText("Name: " + userName);
 
         Glide.with(this)
                 .load("https://dwpdigital.blog.gov.uk/wp-content/uploads/sites/197/2016/07/P1090594-1-254x300.jpeg")

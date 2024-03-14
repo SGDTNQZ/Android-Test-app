@@ -13,7 +13,7 @@
         android:id="@+id/logo_img"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/quiz_logo"/>
 
